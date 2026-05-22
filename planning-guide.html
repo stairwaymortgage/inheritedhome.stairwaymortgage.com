@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Planning | Inherited Home Guide | Stairway Mortgage</title>
+  <meta name="description" content="Answer a few simple questions and an advisor will reach out to walk through your inherited property options — no pressure, no obligation.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div style="background: var(--deep-green); padding: 28px 40px 0;">
+  <div style="max-width:680px; margin:0 auto;">
+    <a href="/" class="breadcrumb">← Back to Home</a>
+  </div>
+</div>
+
+<div class="quiz-wrap">
+  <div class="quiz-header">
+    <div class="section-label">Planning Guide</div>
+    <h1>Let's Understand<br>Your Situation</h1>
+    <p>Take a few minutes to share where you are. There are no wrong answers — this helps us understand what matters most so we can have a meaningful, useful conversation with you.</p>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress-fill" id="quiz-progress" style="width: 12%"></div>
+  </div>
+
+  <!-- Q1 -->
+  <div class="question-block active" data-q="1">
+    <div class="question-num">Question 1 of 8</div>
+    <h2>What is your relationship to the property?</h2>
+    <p class="question-note">This helps us understand your role in the decision-making process.</p>
+    <div class="answer-options">
+      <button class="answer-btn" onclick="selectAnswer(this)">Surviving spouse — I live in the home now</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Adult child or heir — I'm one of several who inherited the property</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">One heir who wants to keep the home — other heirs need to be paid out</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Executor or estate representative helping manage the process</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Other family member or trusted representative</button>
+    </div>
+    <div class="quiz-nav">
+      <a href="/" class="btn-back">← Back to Home</a>
+      <button class="btn-next" onclick="nextQuestion(2)" id="next-1" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="question-block" data-q="2">
+    <div class="question-num">Question 2 of 8</div>
+    <h2>Is there currently a mortgage on the property?</h2>
+    <p class="question-note">An approximate answer is perfectly fine — exact numbers aren't needed yet.</p>
+    <div class="answer-options">
+      <button class="answer-btn" onclick="selectAnswer(this)">Yes — payments are being made and it seems manageable</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Yes — the payment is a financial concern or burden</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">The home is paid off — no mortgage</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I'm not sure of the current mortgage status</button>
+    </div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="prevQuestion(1)">← Back</button>
+      <button class="btn-next" onclick="nextQuestion(3)" id="next-2" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="question-block" data-q="3">
+    <div class="question-num">Question 3 of 8</div>
+    <h2>What is the current condition of the home?</h2>
+    <p class="question-note">This helps us understand whether preparation or renovation might be part of the picture.</p>
+    <div class="answer-options">
+      <button class="answer-btn" onclick="selectAnswer(this)">It's well-maintained and in good shape</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">It needs some cosmetic updates but is livable</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">It needs significant repairs or renovation</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I haven't been able to assess it fully yet</button>
+    </div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="prevQuestion(2)">← Back</button>
+      <button class="btn-next" onclick="nextQuestion(4)" id="next-3" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="question-block" data-q="4">
+    <div class="question-num">Question 4 of 8</div>
+    <h2>Which path feels most relevant to your situation?</h2>
+    <p class="question-note">Select the one that resonates most — your advisor will help you explore all options.</p>
+    <div class="answer-options">
+      <button class="answer-btn" onclick="selectAnswer(this)">I want to keep the home — and I need to pay out other heirs
+        <span class="answer-sub">Cash-out refinance, take title, settle the estate</span>
+      </button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I want to sell the home and decide what comes next
+        <span class="answer-sub">Sell as-is, then buy smaller, relocate, rent, or simplify</span>
+      </button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I want to renovate before selling to maximize the sale price
+        <span class="answer-sub">Renovation loan + listed at improved value</span>
+      </button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I want to rent the home and use that income toward my next purchase
+        <span class="answer-sub">Rental strategy + DSCR lending for next home</span>
+      </button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I want to eliminate the mortgage payment and stay in the home
+        <span class="answer-sub">Reverse mortgage — no monthly payment required</span>
+      </button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I'm not sure yet — I just want to understand my options</button>
+    </div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="prevQuestion(3)">← Back</button>
+      <button class="btn-next" onclick="nextQuestion(5)" id="next-4" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="question-block" data-q="5">
+    <div class="question-num">Question 5 of 8</div>
+    <h2>Are there multiple heirs involved in this decision?</h2>
+    <p class="question-note">This helps us understand the complexity of the estate situation.</p>
+    <div class="answer-options">
+      <button class="answer-btn" onclick="selectAnswer(this)">No — I am the sole heir or decision-maker</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Yes — and we are generally in agreement about the direction</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Yes — and we are still working through different opinions</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">It's complicated — I'd rather explain in the conversation</button>
+    </div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="prevQuestion(4)">← Back</button>
+      <button class="btn-next" onclick="nextQuestion(6)" id="next-5" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="question-block" data-q="6">
+    <div class="question-num">Question 6 of 8</div>
+    <h2>What is your general timeline for making a decision?</h2>
+    <p class="question-note">There is no pressure — we just want to be respectful of where you are in the process.</p>
+    <div class="answer-options">
+      <button class="answer-btn" onclick="selectAnswer(this)">There is some urgency — decisions need to be made soon</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">We have a few months to think things through</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">We're in the early stages — no immediate pressure</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">I'm still processing the loss and not ready to decide anything yet</button>
+    </div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="prevQuestion(5)">← Back</button>
+      <button class="btn-next" onclick="nextQuestion(7)" id="next-6" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="question-block" data-q="7">
+    <div class="question-num">Question 7 of 8</div>
+    <h2>Would a free home value report be helpful?</h2>
+    <p class="question-note">Knowing the current market value is often a useful first step — regardless of which direction you ultimately choose.</p>
+    <div class="answer-options">
+      <button class="answer-btn" onclick="selectAnswer(this)">Yes — I'd like to know what the home is worth today</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Possibly — I'll discuss it with the advisor</button>
+      <button class="answer-btn" onclick="selectAnswer(this)">Not right now, but maybe later</button>
+    </div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="prevQuestion(6)">← Back</button>
+      <button class="btn-next" onclick="nextQuestion(8)" id="next-7" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- Q8 — Contact -->
+  <div class="question-block" data-q="8">
+    <div class="question-num">Question 8 of 8</div>
+    <h2>How should we reach you?</h2>
+    <p class="question-note">An advisor will be in touch within one business day — a calm, no-pressure conversation about what's possible for your situation.</p>
+    <div style="display:flex; flex-direction:column; gap:12px; margin-bottom: 8px;">
+      <div class="input-row">
+        <input type="text" class="text-input" placeholder="Your first name" id="fname">
+        <input type="text" class="text-input" placeholder="Your last name" id="lname">
+      </div>
+      <input type="tel" class="text-input" placeholder="Best phone number" id="phone">
+      <input type="email" class="text-input" placeholder="Email address (optional)" id="email">
+      <input type="text" class="text-input" placeholder="Property address or city / zip (optional)" id="address">
+    </div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="prevQuestion(7)">← Back</button>
+      <button class="btn-next" onclick="submitQuiz()" style="background: var(--gold); color: var(--charcoal); font-weight:600;">Submit &amp; Connect With an Advisor →</button>
+    </div>
+  </div>
+
+  <!-- Confirmation -->
+  <div class="question-block" data-q="9">
+    <div class="confirmation">
+      <div class="confirmation-icon">✓</div>
+      <h2>Thank You for Reaching Out</h2>
+      <p>We've received your information. An advisor from our team will be in touch within one business day for a relaxed, no-obligation conversation about your situation and the options available to you.</p>
+      <p style="font-style:italic; font-size:0.87rem; color: #b8966a;">You deserve good counsel at a difficult time. We're honored to be part of that.</p>
+      <a href="/" class="btn-primary" style="margin-top: 8px;">← Return to Home</a>
+    </div>
+  </div>
+
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="/js/components.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

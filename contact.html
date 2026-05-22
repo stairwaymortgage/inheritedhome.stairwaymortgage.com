@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Inherited Home Guide | Stairway Mortgage</title>
+  <meta name="description" content="Reach Jim Blackburn at Stairway Mortgage to discuss your inherited property situation. No pressure, no obligation — just a real conversation.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="option-hero">
+  <div class="option-hero-inner">
+    <a href="/" class="breadcrumb">← <span>Home</span></a>
+    <h1>Let's Have a<br><em style="font-style:italic; color: var(--gold-light);">Real Conversation</em></h1>
+    <p>No pressure to decide anything. Just reach out and we'll take it from there — on your timeline.</p>
+  </div>
+</div>
+
+<div class="contact-wrap">
+
+  <!-- FORM -->
+  <div class="form-side">
+    <h2>Send Jim a Message</h2>
+    <p class="form-intro">Fill out the form below and Jim will personally follow up within one business day. If you'd prefer to talk right away, his direct number is in the sidebar.</p>
+
+    <div id="contact-form">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="field-wrap">
+            <label for="cfname">First Name</label>
+            <input type="text" id="cfname" placeholder="Your first name">
+          </div>
+          <div class="field-wrap">
+            <label for="clname">Last Name</label>
+            <input type="text" id="clname" placeholder="Your last name">
+          </div>
+        </div>
+        <div class="field-wrap">
+          <label for="cphone">Phone Number</label>
+          <input type="tel" id="cphone" placeholder="Best number to reach you">
+        </div>
+        <div class="field-wrap">
+          <label for="cemail">Email Address</label>
+          <input type="email" id="cemail" placeholder="your@email.com">
+        </div>
+        <div class="field-wrap">
+          <label for="ctopic">What Can We Help You With?</label>
+          <select id="ctopic">
+            <option value="" disabled selected>Select the option that fits best</option>
+            <option>I want to stay in the home and settle the estate</option>
+            <option>I'm thinking about selling the home as-is</option>
+            <option>I want to renovate before selling</option>
+            <option>I'm interested in renting the home and buying another</option>
+            <option>I want to learn about eliminating the mortgage payment</option>
+            <option>I'm not sure yet — I just want to talk through my options</option>
+          </select>
+        </div>
+        <div class="field-wrap">
+          <label for="cmessage">Anything Else You'd Like to Share</label>
+          <textarea id="cmessage" placeholder="Tell us a little about your situation — property location, how many heirs are involved, your timeline, or whatever feels relevant. There are no wrong answers."></textarea>
+        </div>
+      </div>
+      <button class="submit-btn" onclick="submitContactForm()">Send My Message →</button>
+      <p class="form-disclaimer">By submitting this form you agree to be contacted by Jim Blackburn at Stairway Mortgage regarding your inquiry. We do not sell or share your information. All conversations are confidential.</p>
+    </div>
+
+    <div id="contact-confirmation" class="conf-hidden">
+      <div class="confirm-icon">✓</div>
+      <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:400; margin-bottom:12px;">Message Received</h3>
+      <p style="font-size:0.92rem; color:var(--muted); line-height:1.75; font-weight:300; max-width:380px; margin:0 auto;">Thank you for reaching out. Jim will be in touch within one business day for a relaxed, no-obligation conversation about your situation.</p>
+      <p style="margin-top:12px; font-style:italic; font-size:0.84rem; color:#b8966a;">You deserve good counsel at a difficult time.</p>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="contact-sidebar">
+    <div class="info-card">
+      <h3>Jim Blackburn</h3>
+      <div class="contact-row">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Direct Line</div>
+          <!-- UPDATE PHONE NUMBER BELOW -->
+          <div class="contact-value"><a href="tel:+19540000000">(954) 000-0000</a></div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <!-- UPDATE EMAIL BELOW -->
+          <div class="contact-value"><a href="mailto:jim@stairwaymortgage.com">jim@stairwaymortgage.com</a></div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Fort Lauderdale, Florida<br>Serving all of Florida</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">🪪</div>
+        <div>
+          <div class="contact-label">License</div>
+          <div class="contact-value">NMLS #1072866<br>Stairway Mortgage / NEXA Mortgage LLC NMLS #1660690</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hours-card">
+      <h4>Availability</h4>
+      <!-- UPDATE HOURS IF NEEDED -->
+      <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">8:00 AM – 7:00 PM</span></div>
+      <div class="hours-row"><span class="day">Saturday</span><span class="time">9:00 AM – 4:00 PM</span></div>
+      <div class="hours-row"><span class="day">Sunday</span><span class="time">By appointment</span></div>
+    </div>
+
+    <div class="planning-nudge">
+      <p>Not sure what to say? Our guided planning questionnaire walks you through a few simple questions so Jim arrives at the conversation already knowing your situation.</p>
+      <a href="/planning-guide">Try the Planning Guide First →</a>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="/js/components.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
