@@ -16,6 +16,7 @@ const NAV_HTML = `
     <li><a href="/renovate-first">Renovate First</a></li>
     <li><a href="/rent-it-buy-another">Rent It, Buy Another</a></li>
     <li><a href="/eliminate-payment">Eliminate Payment</a></li>
+    <li><a href="/blog">Blog</a></li>
     <li><a href="/contact">Contact</a></li>
     <li><a href="/planning-guide" class="nav-cta">Start Planning &rarr;</a></li>
   </ul>
