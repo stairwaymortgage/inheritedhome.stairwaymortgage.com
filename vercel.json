@@ -4,6 +4,8 @@
   "outputDirectory": ".",
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
     { "source": "/live-here-settle-estate", "destination": "/live-here-settle-estate.html" },
     { "source": "/sell-as-is", "destination": "/sell-as-is.html" },
     { "source": "/renovate-first", "destination": "/renovate-first.html" },
