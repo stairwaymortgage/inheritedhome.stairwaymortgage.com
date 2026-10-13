@@ -1,3 +1,13 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "slug": "sell-an-inherited-house-as-is-or-renovate-first",
+      "title": "Sell an Inherited House As-Is or Renovate First? Florida Guide",
+      "description": "Should you sell an inherited Florida home as-is or renovate first? Learn which path may fit your family's timeline, finances, and goals.",
+      "heroImage": "https://media.stairwaymortgage.com/ih/blog/2026-10-13-sell-an-inherited-house-as-is-or-renovate-first.png",
+      "heroAlt": "A middle-aged Florida woman standing thoughtfully in a sunlit living room of an older home, looking at the space with calm consideration",
+      "tag": "decisions",
+      "date": "2026-10-13"
+    }
+  ]
 }
